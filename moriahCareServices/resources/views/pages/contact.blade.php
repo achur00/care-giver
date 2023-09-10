@@ -27,7 +27,12 @@
 			  <!-- contact-area -->
             <section id="contact" class="contact-area contact-bg pt-100 pb-70 p-relative fix" style="background-image:url(assets/img/an-bg/an-bg11.png); background-size: cover;background-repeat: no-repeat;">
                 <div class="container">
-             
+                    @if(Session::get('msgSuccess'))
+                        <div class="alert alert-success"> {{ Session::get('msgSuccess')}}</div>
+                    @elseif(Session::get('msgSuccess'))
+                    <div class="alert alert-danger"> {{ Session::get('msgSuccess')}}</div>
+                    @endif
+
 					<div class="row">
                         <div class="col-lg-6">
                             <div class="contact-img">
@@ -49,7 +54,7 @@
                             </div>
                                 <div class="col-lg-6">
                                 <div class="contact-field p-relative c-name mb-20">                                    
-                                    <input type="text" name='lasttName' placeholder="Last Name">
+                                    <input type="text" name='lastName' placeholder="Last Name">
                                 </div>                               
                             </div>
 							<div class="col-lg-12">                               

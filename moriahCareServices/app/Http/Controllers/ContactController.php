@@ -20,11 +20,11 @@ class ContactController extends Controller
         ]);
 
 $message= new Message;
-$message->first_name=$request->input('FirstName');
+$message->first_name=$request->input('firstName');
 $message->last_name=$request->input('lastName');
 $message->email=$request->input('email');
 $message->subject=$request->input('subject');
-$message->content=$request->input('messages'); 
+$message->content=$request->input('content'); 
 
 $saved=$message->save();
 if($saved){
