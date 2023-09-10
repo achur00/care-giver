@@ -75,18 +75,8 @@
                 <div class="sidebar-side col-xl-3 col-lg-4 col-md-12 col-sm-12">
                     <aside class="sidebar services-sidebar">
                         
-                        <!-- Category Widget -->
-                        <div class="sidebar-widget categories">
-                            <div class="widget-content">
-                                <!-- Services Category -->
-                                <ul class="services-categories">
-                                    <li><a href="{{url('/services')}}">All Services</a></li>
-                                    <li class="active"><a href="service-detail.html">Online Emergency</a></li>
-                                    <li><a href="services-detail.html">Medication Service</a></li>
-                                    <li><a href="service-detail.html">24hr Health Program</a></li>       
-                                </ul>
-                            </div>
-                        </div>
+                        <!-- Service Widget -->
+                        @include('include.servicewidget')
                         
                         <!--Brochures Box-->
                         <div class="brochures-box">

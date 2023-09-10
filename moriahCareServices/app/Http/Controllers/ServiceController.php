@@ -56,9 +56,10 @@ class ServiceController extends Controller
 
 
     public function show($id){
+        $allService=Service::inRandomOrder()->take(3)->get();
         $serviceProduct=Service::where('id','=',$id)->first();
-          // dd( $serviceAndSubPage);
+        //   dd( $allService);
 
-         return view('pages.service-template',compact('serviceProduct'));
+         return view('pages.service-template',compact('serviceProduct','allService'));
     }
 }
