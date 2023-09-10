@@ -3,6 +3,7 @@
 @section('content')
         
         <main>
+         
             <!-- breadcrumb-area -->
             <section class="breadcrumb-area d-flex align-items-center" style="background-image:(assets/img/testimonial/test-bg.jpg);">
                 <div class="container">
@@ -35,9 +36,11 @@
 
 					<div class="row">
                         <div class="col-lg-6">
-                            <div class="contact-img">
-                                <img src="{{asset('assets/img/bg/touch-illustration.png')}}" alt="touch-illustration">
-                            </div>
+                              <div class="">
+        
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2485.6903842004604!2d0.1824383152805845!3d51.46384082170883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHowbury%20House%20Thames%20Road%20Crayford%20DA1%204RQ!5e0!3m2!1sen!2sng!4v1679449176672!5m2!1sen!2sng" width="100px" height="800px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+
                         </div>
 						<div class="col-lg-6">
                         <div class="section-title mb-60" >
