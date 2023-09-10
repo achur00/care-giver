@@ -40,8 +40,9 @@
                         </div>
 
                         <div class="content-box">
-                            <h2>{{$serviceProduct->service_name}}</h2>
-                            <p>{{$serviceProduct->content}}</p>
+                            {{-- <h2>{{$serviceProduct->service_name}}</h2> --}}
+                            <p>{!!$serviceProduct->content!!}</p>
+                            @include('include.join-us')
     
                             <!-- Two Column -->
                             {{-- <div class="two-column">
@@ -62,12 +63,7 @@
                                 </div>
                             </div> --}}
 
-                            <h3>Why Choose This Service</h3>
-
-                            <p>Complete account of the systems and expound the actually teachings of the great explorer of the truth, the master-builder of human uts happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful anyone who loves or pursues.</p>
-
-                            <p>Complete account of the systems and expound the actually teachings of the great explorer of the truth, the master-builder of human uts happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful anyone who loves or pursues.</p>
-
+                            
                             
                         </div>
                     </div>

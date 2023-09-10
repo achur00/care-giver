@@ -23,10 +23,10 @@ class NewsletterController extends Controller
 // dd($Newsletter->email);
         if(empty($Newsletter->email )){
         $newsletter->save();
-        return  back()->with('msgSuccess','Thank you for subscribing to our newsletter');
+        return  back()->with('msgSuccess','Thank you for subscribing to our newsletter!');
        }else
        {
-        return back()->with('msgError','You have already subscribed to our newsletter');
+        return back()->with('msgError','You have already subscribed to our newsletter!');
        }
         
     }

@@ -21,7 +21,7 @@ class HomeController extends Controller
    $subpage_homeCare=SubPage::where('id','=','1')->first();
    $subpage_specialistCare=SubPage::where('id','=','2')->first();
     
-    return view('page.home', compact('homeContents','services','subpage_homeCare','subpage_specialistCare'));
+    return view('pages.home', compact('homeContents','services','subpage_homeCare','subpage_specialistCare'));
     }
 }
 

@@ -113,20 +113,20 @@
                     <div class="row  mx-auto container mt-5">                        
                       
                        
-                        <div class="col-lg-6">                            
+                        <div class="col-lg-6 mt-70">                            
                              <div class="contact-img">
                                 <img src="{{asset('assets/img/bg/loving-caring-young-adult-son-bringing-his-old-eld-2022-08-03-02-43-18-utc.jpg')}}" alt="touch-illustration">
                             </div>
                         </div>
                         
                         <div class="col-lg-6">
-                            <div class="section-title left-align mb-50">                               
+                            <div class="section-title left-align mb-10">                               
                                 <h2> 
                                {{$subpage_homeCare->name}}
                                    
                                 </h2>
                                 <p>
-                                    Duis non aliquet tellus, in mollis leo. Phasellus quis posuere dui. Nulla mauris purus, mattis eget sagittis at, accumsan sed leo.
+                                    {{$subpage_homeCare->intro}}
                                 </p>
                         </div>
 
@@ -146,12 +146,12 @@
 
                                             <div id="{{$service->card_id2}}" class="collapse" aria-labelledby="{{$service->card_id}}"
                                                 data-parent="#accordionExample">
-                                                <div class="card-body">
-                                                    {{$service->content}}
+                                                <div class="ml-3">
+                                                    {!! Str::limit($service->content, 100)!!}
                                                 </div>
 
                                                 <div class="card-body container">
-                                                    <button class="rounded-pill" href='{{url('/services')}}'>Go to Service</button>
+                                                    <a class="rounded-pill bg-primary p-2 text-white" href='{{url("/service/$service->id")}}'>Go to Service</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -206,19 +206,20 @@
             {{-- </section> --}}
             <!-- faq-aread-end -->
             <div class="contain">
-                    <div class="row  mx-auto container mt-5">                        
+                    <div class="row  mx-auto container mt-5 ">                        
                       
                        
                        
                         
                         <div class="col-lg-6">
-                            <div class="section-title left-align mb-50">                               
+                            <div class="section-title left-align mb-10">                               
                                 <h2> 
                                {{$subpage_specialistCare->name}}
                                    
                                 </h2>
                                 <p>
-                                    Duis non aliquet tellus, in mollis leo. Phasellus quis posuere dui. Nulla mauris purus, mattis eget sagittis at, accumsan sed leo.
+                                    
+                                    {{$subpage_specialistCare->intro}}
                                 </p>
                             </div>
 
@@ -243,7 +244,7 @@
                                                     </div>
 
                                                     <div class="card-body container">
-                                                        <button class="rounded-pill" href='{{url('/services')}}'>Go to Service</button>
+                                                        <a class="rounded-pill bg-primary p-2 text-white" href='{{url("/service/$service->id")}}'>Go to Service</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -293,7 +294,7 @@
                             </div>
                         </div>
 
-                         <div class="col-lg-6">                            
+                         <div class="col-lg-6 mt-70">                            
                              <div class="custom-achur-img">
                                 <img src="{{asset('assets/img/bg/loving-caring-young-adult-son-bringing-his-old-eld-2022-08-03-02-43-18-utc.jpg')}}" alt="touch-illustration">
                             </div>
@@ -543,33 +544,9 @@
                 </div>
             </section> --}}
             <!-- team-area-end -->
+
             <!-- newslater-area -->
-            <section class="newslater-area pb-50" style="background-image: url(img/an-bg/an-bg06.png);background-position: center bottom; background-repeat: no-repeat;" >
-                <div class="container">
-                    <div class="row align-items-end">
-                        <div class="col-xl-4 col-lg-4 col-lg-4">
-                            <div class="section-title mb-100">
-                                <span>NEWSLETTER</span>          
-                                <h2>Subscribe To Our Newsletter</h2>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4">
-                            <form name="ajax-form" id="contact-form4" action="{{url('/newsletter')}}" method="post" class="contact-form newslater pb-130">
-                                @csrf
-                               <div class="form-group">
-                                  <input class="form-control" id="email2" name="email" type="email" placeholder="Email Address..." value="" required=""> 
-                                  <button type="submit" class="btn btn-custom" id="send2">Subscribe <i class="fas fa-chevron-right"></i></button>
-                               </div>
-                               <!-- /Form-email -->	
-                            </form>
-                        </div>
-                        <div class="col-xl-4 col-lg-4">
-                            <img src="{{asset('assets/img/bg/news-illustration.png')}}">
-                        </div>
-                    </div>
-                   
-                </div>
-            </section>
+             @include('include.newsletter')
             <!-- newslater-aread-end -->
 
             {{-- <!-- testimonial-area -->

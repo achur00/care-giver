@@ -8,15 +8,16 @@ use App\Models\SubPage;
 
 class ServiceController extends Controller
 {
+    // for all services
     public function index()
     {   $serviceAndSubPages=SubPage::with(['Service'])->get();
-        return view('page.services',compact('serviceAndSubPages'));
+        return view('pages.services',compact('serviceAndSubPages'));
     }
 
 
 
 
-   public function index2($id){
+   public function homeCare($id){
         // $serviceProduct=Service::where('id','=',$id)->first();
         if($id=1){
         $serviceAndSubPages=SubPage::with(['Service'])->where('id','=',$id)->get();
@@ -24,13 +25,32 @@ class ServiceController extends Controller
 
         // dd( $serviceAndSubPages);
 
-         return view('page.services',compact('serviceAndSubPages'));
+         return view('pages.services',compact('serviceAndSubPages'));
         }else{
+            // reseting id to 1 even if it was changed in url
             $id=1;
             $serviceAndSubPages=SubPage::with(['Service'])->where('id','=',$id)->get();
-            return view('page.services',compact('serviceAndSubPages'));
+            return view('pages.services',compact('serviceAndSubPages'));
         }
     }
+
+    public function specialistCare($id){
+        // $serviceProduct=Service::where('id','=',$id)->first();
+        if($id=2){
+        $serviceAndSubPages=SubPage::with(['Service'])->where('id','=',$id)->get();
+
+
+        // dd( $serviceAndSubPages);
+
+         return view('pages.services',compact('serviceAndSubPages'));
+        }else{
+            // reseting id to 2 even if it was changed in url
+            $id=2;
+            $serviceAndSubPages=SubPage::with(['Service'])->where('id','=',$id)->get();
+            return view('pages.services',compact('serviceAndSubPages'));
+        }
+    }
+
 
 
 
@@ -39,6 +59,6 @@ class ServiceController extends Controller
         $serviceProduct=Service::where('id','=',$id)->first();
           // dd( $serviceAndSubPage);
 
-         return view('page.service-template',compact('serviceProduct'));
+         return view('pages.service-template',compact('serviceProduct'));
     }
 }

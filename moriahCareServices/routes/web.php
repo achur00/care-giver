@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,9 +25,16 @@ Route::get('/', [HomeController::class, 'index']  );
 
 // ServiceController
 Route::get('/services', [ServiceController::class, 'index']  );
-Route::get('/homecare/{homecare}', [ServiceController::class, 'index2']  );
+Route::get('/homecare/{homecare}', [ServiceController::class, 'homeCare']  );
+Route::get('/specialistcare/{homecare}', [ServiceController::class, 'specialistCare']  );
 Route::get('/service/{service}', [ServiceController::class, 'show']  );
 
 // newsletter
 Route::post('/newsletter', [NewsletterController::class,'store']);
 
+// AboutController
+Route::get('/about', [AboutController::class,'index']);
+
+//ContactController
+Route::get('/contact',[ContactController::class, 'index']);
+Route::post('/message',[ContactController::class, 'store']);

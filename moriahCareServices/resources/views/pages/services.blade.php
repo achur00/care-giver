@@ -42,7 +42,7 @@
                             </div>
                             <div class="content mt-4">
                                 <h5 class="title">{{$service->service_name}}</h5>
-                                <p class="text-muted mt-3 mb-0">{{$service->content}}</p>
+                                <p class="text-muted mt-3 mb-0">{!!Str::limit($service->short_content,100)!!}</p>
                                 <div class="mt-3">
                                     <a href="{{url('service/'.$service->id)}}" class="text-custom border p-2 rounded-pill">Check Service <i class="mdi mdi-chevron-right"></i></a>
                                     
@@ -63,53 +63,7 @@
             </div>
         
             
-			 <!-- services-area -->
-            <section id="services" class="services-area services-bg services-two pt-100 pb-70"  style="background-image:url({{asset('assets/img/bg/services_aliment_bg.png')}}); background-size: contain; background-repeat: no-repeat;background-position: center center;">
-                <div class="container">
-          
-                    <div class="row sr-line">
-                        <div class="col-lg-4 col-md-12">
-                            <div class="s-single-services text-center active" >
-                                <div class="services-icon">
-                                    <img src="{{asset('assets/img/icon/sr-icon01.png')}}" alt="img">
-                                </div>
-                                <div class="second-services-content">
-                                    <h5><a href="services-detail.html">Online Emergency</a></h5>       
-                                    <p>Mauris nunc felis, congue eu convallis in, bibendum vitae nisl. Duis vestibulum eget orci maximus pretium.</p>
-                                </div>
-								
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                             <div class="s-single-services text-center" >
-                                <div class="services-icon">
-                                   <img src="{{asset('assets/img/icon/sr-icon02.png')}}" alt="img">
-                                </div>
-                                <div class="second-services-content">
-                                    <h5><a href="services-detail.html">Medication Service</a></h5>       
-                                    <p>Mauris nunc felis, congue eu convallis in, bibendum vitae nisl. Duis vestibulum eget orci maximus pretium.</p>
-                                </div>
-								
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <div class="s-single-services text-center" >
-                                <div class="services-icon">
-                                  <img src="{{asset('assets/img/icon/sr-icon03.png')}} alt="img">
-                                </div>
-                                <div class="second-services-content">
-                                    <h5><a href="services-detail.html">24hr Health Program</a></h5>       
-                                    <p>Mauris nunc felis, congue eu convallis in, bibendum vitae nisl. Duis vestibulum eget orci maximus pretium.</p>
-                                </div>
-								
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-            </section>
-            <!-- services-area-end -->
+			@include('include.service-area')
 
              <!-- newslater-area -->
             <section class="newslater-area pb-50" style="background-image: url({{asset('assets/img/an-bg/an-bg06.png')}});background-position: center bottom; background-repeat: no-repeat;" >
