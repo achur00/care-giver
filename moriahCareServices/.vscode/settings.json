@@ -1,0 +1,33 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mysqlLocal",
+            "database": "moriahcare",
+            "username": "root",
+            "password": "local?hostX#@"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 33060,
+            "driver": "MySQL",
+            "name": "mysqlLocal2",
+            "database": "moriahcare",
+            "username": "root",
+            "password": "local?hostX#@",
+            "connectionTimeout": 30
+        }
+    ]
+}

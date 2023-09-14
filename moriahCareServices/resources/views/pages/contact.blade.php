@@ -5,7 +5,7 @@
         <main>
          
             <!-- breadcrumb-area -->
-            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url(assets/img/testimonial/test-bg.jpg)">
+            <section class="breadcrumb-area d-flex align-items-center" style="background-image:(assets/img/testimonial/test-bg.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">

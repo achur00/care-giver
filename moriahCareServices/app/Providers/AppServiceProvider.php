@@ -5,7 +5,6 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Page;
 use App\Models\Contact;
-use App\Models\Service;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -26,13 +25,11 @@ class AppServiceProvider extends ServiceProvider
         {
              $page=Page::all()->load(['SubPage']);
              $contact=Contact::all();
-             $services=Service::inRandomOrder()->take(6)->get();
             
                  
 
         $view->with('pages', $page)
             ->with('contacts',$contact)
-            ->with('allServices',$services)
         ;
         });
     }
