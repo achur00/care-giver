@@ -157,9 +157,11 @@
                                         </div>
                                     @endforeach
 
-                                    <button class="w-100 p-3 bg-primary rounded-pill justify-content-center" type="button" data-toggle="collapse" data-target="{{'#'.$service->card_id2}}" aria-expanded="true" aria-controls="{{$service->card_id}}">
+                                    <button class="w-100 p-3 bg-arkuz-moriah-orange rounded-pill justify-content-center" type="button" >
                                         <span class="text-light" >
+                                            <a href=href='{{url("/services")}}'>
                                             More Services
+                                        </a>
                                         </span>
                                     </button>
 
@@ -250,11 +252,13 @@
                                             </div>
                                         @endforeach
 
-                                        <button class="w-100 p-3 bg-primary rounded-pill justify-content-center" type="button" data-toggle="collapse" data-target="{{'#'.$service->card_id2}}" aria-expanded="true" aria-controls="{{$service->card_id}}">
-                                            <span class="text-light" >
-                                                More Services
-                                            </span>
-                                        </button>
+                                        <button class="w-100 p-3 bg-arkuz-moriah-orange rounded-pill justify-content-center" type="button" >
+                                        <span class="text-light" >
+                                            <a href=href='{{url("/services")}}'>
+                                            More Services
+                                        </a>
+                                        </span>
+                                    </button>
 
                                         {{-- <div class="card">
                                             <div class="card-header" id="headingOne">

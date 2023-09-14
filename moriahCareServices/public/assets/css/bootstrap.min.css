@@ -173,8 +173,17 @@ a {
 }
 
 a:hover {
-    color: #0056b3;
-    text-decoration: underline
+    color: white;
+    text-decoration: underline;
+    /* background: #ff5a00;
+    padding: 10px;
+    border-radius: 20px */
+}
+
+#arkuz:hover {
+    background: #ff5a00;
+    padding: 10px;
+    border-radius: 20px
 }
 
 a:not([href]) {
@@ -438,7 +447,14 @@ h6 {
 }
 
 .display-4 {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2
+}
+
+/* ++++++++++arkuz++++++++ */
+.arkuz-display-5 {
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.2
 }
@@ -7395,6 +7411,16 @@ button.bg-warning:hover {
     background-color: #dc3545 !important
 }
 
+/* ++++++++++++++++++arkuz++++++++++++ */
+.bg-arkuz-moriah-orange {
+    background-color: #0777ec !important
+}
+
+.bg-arkuz-moriah-orange:hover {
+    background-color: #ff5a00 !important
+}
+
+/*++++++++++arkus+++++++++++++++++  */
 a.bg-danger:focus,
 a.bg-danger:hover,
 button.bg-danger:focus,

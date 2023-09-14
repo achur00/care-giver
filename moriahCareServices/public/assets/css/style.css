@@ -84,7 +84,7 @@ a:hover,
 
 a,
 button {
-	color: #1696e7;
+	color: #ffffff;
 	outline: medium none;
 }
 
@@ -302,7 +302,7 @@ label {
 
 /* scrollUp */
 #scrollUp {
-	background: #1E0B9B;
+	background: #ff5a00;
 	height: 45px;
 	width: 45px;
 	right: 50px;
@@ -317,7 +317,7 @@ label {
 }
 
 #scrollUp:hover {
-	background: #1E0B9B;
+	background: #0062cc;
 }
 
 /* 2. header */
@@ -447,11 +447,11 @@ label {
 	margin-left: 5px;
 	height: 35px;
 	width: 35px;
-	background: #e9eaf8;
+	background: #ffffff;
 	text-align: center;
 	line-height: 35px;
 	border-radius: 50%;
-	color: #191D3B;
+	color: #ff5a00;
 }
 
 .header-social a:hover {
@@ -514,7 +514,8 @@ label {
 }
 
 .top-btn {
-	background: transparent linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(90deg, #409eff 0%,
+			#0777ec 100%) 0% 0% no-repeat padding-box;
 	box-shadow: 3px 4px 15px #3FB0CEA6;
 	padding: 10px 15px 10px 30px;
 	width: 100%;
@@ -538,7 +539,7 @@ label {
 }
 
 .top-btn:hover {
-	background: transparent linear-gradient(90deg, #07CCEC 0%, #1E0B9B 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(90deg, #ff5a00 0%, #ef1800 100%) 0% 0% no-repeat padding-box;
 	box-shadow: none;
 	color: #fff;
 }
@@ -664,7 +665,8 @@ label {
 .second-header {
 	border: none;
 	padding-bottom: 9px;
-	background: transparent linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(90deg, #409eff 0%,
+			#0777ec 100%) 0% 0% no-repeat padding-box;
 	padding-top: 9px;
 	color: #fff;
 }
@@ -1137,7 +1139,8 @@ label {
 }
 
 .btn.ss-btn {
-	background: transparent linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(90deg, #409eff 0%,
+			#0777ec 100%) 0% 0% no-repeat padding-box;
 	box-shadow: 3px 4px 15px #3FB0CEA6;
 	padding: 14px 15px 14px 30px;
 	width: 176px;
@@ -2787,7 +2790,8 @@ section:hover .section-title h2::before {
 	width: 100%;
 	text-align: left;
 	padding-right: 55px;
-	background: transparent linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(90deg, #ff5a00 0%,
+			#0062cc 100%) 0% 0% no-repeat padding-box;
 	border-radius: 10px;
 }
 
@@ -4488,7 +4492,7 @@ div.single-cta:last-child {
 	z-index: 1;
 	transition: all 0.3s ease-in-out;
 	margin-top: 15px;
-	border-top: 4px solid #1E0B9B;
+	border-top: 4px solid #ff5a00;
 	box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
 	-webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
 }
@@ -8070,7 +8074,8 @@ p.checkout-coupon input[type="text"] {
 }
 
 .newslater-area #contact-form4 button {
-	background: transparent linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(90deg, #409eff 0%,
+			#0777ec 100%) 0% 0% no-repeat padding-box;
 	box-shadow: none;
 	padding: 14px 15px 14px 30px;
 	width: 43%;
