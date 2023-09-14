@@ -26,12 +26,12 @@
         <header class="header-area">  
 				
             <div id="header-sticky" class="menu-area menu-area2">
-                <div class="container">
+                <div class="container p-2">
                     <div class="second-menu">
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo3">
-                                    <a href="index.html"><img src="{{asset('assets/img/logo/logo.png')}}" alt="logo"></a>
+                                    <a href="index.html"><img class='arkuz_thumbnail' src="{{asset('assets/img/logo/moriah-logo.jpg')}}" alt="logo"></a>
                                 </div>
                             </div>
                             <div class="col-xl-8 col-lg-8">                               
@@ -63,7 +63,7 @@
                                 </div>
                             </div>    
                              <div class="col-xl-2 col-lg-2 d-none d-lg-block">
-                                 <a href="contact.html" class="top-btn">Get A Quote <i class="fas fa-chevron-right"></i></a>
+                                 <a href="contact.html" class="top-btn p-2">Make A Quote <i class="fas fa-chevron-right"></i></a>
                                  
                             </div>
                              <div class="col-12">
@@ -139,33 +139,40 @@
 						<div class="col-xl-2 col-lg-2 col-sm-6">
                             <div class="footer-widget mb-30">
                                 <div class="f-widget-title">
-                                    <h5>Our Links</h5>
+                                    <h5>Pages</h5>
                                 </div>
                                 <div class="footer-link">
-                                    <ul>                                        
-                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Partners</a></li>
+                                    <ul>                       @foreach ($pages as $page)
+                                          <li><a href="#"><i class="fas fa-chevron-right"></i> {{$page->name}}</a></li>   
+                                        @endforeach                  
+                                        {{-- <li><a href="#"><i class="fas fa-chevron-right"></i> Partners</a></li>
 										<li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
                                         <li><a href="#"><i class="fas fa-chevron-right"></i> Career</a></li>
                                         <li><a href="#"><i class="fas fa-chevron-right"></i> Reviews</a></li>
                                         <li><a href="#"><i class="fas fa-chevron-right"></i> Terms & Conditions</a></li>
-                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help</a></li> --}}
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-sm-6">
                             <div class="footer-widget mb-30">
-                                <div class="f-widget-title">
-                                    <h5>Other Links</h5>
+                                <div class="f-widget-t+itle">
+                                    <h5>Services
+                                        
+                                    </h5>
                                 </div>
                                 <div class="footer-link">
                                     <ul>
-                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                                        @foreach ($allServices as $services)
+                                          <li><a href="#"><i class="fas fa-chevron-right"></i> {{$services->service_name}}</a></li>   
+                                        @endforeach
+                                        {{-- <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
                                         <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
                                         <li><a href="#"><i class="fas fa-chevron-right"></i> Services</a></li>
                                         <li><a href="#"><i class="fas fa-chevron-right"></i> Project</a></li>
                                         <li><a href="#"><i class="fas fa-chevron-right"></i> Our Team</a></li>
-                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Latest Blog</a></li>
+                                        <li><a href="#"><i class="fas fa-chevron-right"></i> Latest Blog</a></li> --}}
                                     </ul>
                                 </div>
                             </div>
@@ -178,18 +185,21 @@
                                 <div class="footer-link">
                                     <div class="f-contact">
                                     <ul>
-                                    <li>
+                                      @foreach ($contacts as $contact)
+                                          
                                         <i class="icon dripicons-phone"></i>
-                                        <span>1800-121-3637<br>+91 555 234-8765</span>
+                                        <span>{{$contact->phone1}}<br>{{$contact->phone2}}</span>
                                     </li>
                                     <li>
                                         <i class="icon dripicons-mail"></i>
-                                         <span><a href="mailto:info@example.com">info@example.com</a><br><a href="mailto:sale@example.com">sale@example.com</a></span>
+                                         <span><a href="mailto:info@example.com">{{$contact->email1}}</a><br><a href="mailto:sale@example.com">{{$contact->email2}}</a></span>
                                     </li>
                                     <li>
                                       <i class="fal fa-map-marker-alt"></i>
-                                         <span>380 St Kilda Road, Melbourne<br>VIC 3004, Australia</span>
+                                         <span>{{$contact->address}}</span>
                                     </li>
+                                     @endforeach  
+                                   
                                 </ul>
                                     
                                     </div>

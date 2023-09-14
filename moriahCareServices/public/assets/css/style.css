@@ -302,7 +302,7 @@ label {
 
 /* scrollUp */
 #scrollUp {
-	background: #1E0B9B;
+	background: #ff5a00;
 	height: 45px;
 	width: 45px;
 	right: 50px;
@@ -317,7 +317,7 @@ label {
 }
 
 #scrollUp:hover {
-	background: #1E0B9B;
+	background: #0062cc;
 }
 
 /* 2. header */
@@ -514,7 +514,8 @@ label {
 }
 
 .top-btn {
-	background: transparent linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(90deg, #409eff 0%,
+			#0777ec 100%) 0% 0% no-repeat padding-box;
 	box-shadow: 3px 4px 15px #3FB0CEA6;
 	padding: 10px 15px 10px 30px;
 	width: 100%;
@@ -664,7 +665,8 @@ label {
 .second-header {
 	border: none;
 	padding-bottom: 9px;
-	background: transparent linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(90deg, #409eff 0%,
+			#0777ec 100%) 0% 0% no-repeat padding-box;
 	padding-top: 9px;
 	color: #fff;
 }
@@ -1137,7 +1139,8 @@ label {
 }
 
 .btn.ss-btn {
-	background: transparent linear-gradient(90deg, #1E0B9B 0%, #07CCEC 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(90deg, #409eff 0%,
+			#0777ec 100%) 0% 0% no-repeat padding-box;
 	box-shadow: 3px 4px 15px #3FB0CEA6;
 	padding: 14px 15px 14px 30px;
 	width: 176px;
