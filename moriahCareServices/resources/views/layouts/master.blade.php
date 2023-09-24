@@ -122,11 +122,10 @@
                         <div class="col-xl-3 col-lg-3 col-sm-6">
                             <div class="footer-widget mb-30">
                                 <div class="flog mb-35">
-                                    <a href="#"><img src="{{asset('assets/img/logo/logo.png')}}" alt="logo"></a>
+                                    <a href="#"><img src="{{asset('assets/img/logo/moriah-logo.jpg')}}" alt="logo"></a>
                                 </div>
                                 <div class="footer-text mb-20">
-                                    <p>Sed ut perspiciatis unde om is nerror sit voluptatem accustium dolorem tium totam rem aperam eaque ipsa quae ab illose
-                                    inntore veritatis</p>
+                                    <p>At Moriah Caregivers, we are dedicated to providing compassionate and professional care services for...</p>
                                 </div>
                                 <div class="footer-social">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>

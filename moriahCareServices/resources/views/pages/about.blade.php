@@ -38,12 +38,18 @@
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <div class="about-content s-about-content pl-30">
                                 <div class="section-title mb-20">
-                                    <span>About Us</span>
-                                    <h2>We Are Specialize in Medical Diagnositics</h2>                                  
+                                    <span>About Moriah Care giver</span>
+                                    <h2>At Moriah Caregivers, we are dedicated to providing compassionate and professional care services</h2>                                  
                                 </div>
-                                <p>Nulla lacinia sapien a diam ullamcorper, sed congue leo vulputate. Phasellus et ante ultrices, sagittis purus vitae, sagittis quam. Quisque urna lectus, auctor quis tristique tincidunt, semper vel lectus. Mauris eget eleifend massa. Praesent ex felis, laoreet nec tellus in, laoreet commodo ipsum.</p>
+                                <p>for individuals and families in need. With a team of highly trained and caring professionals, we offer a wide range of services tailored to meet the unique needs of our clients.
+
+Our mission is to enhance the quality of life for those we serve by promoting independence, dignity, and well-being. Whether you or your loved one requires assistance with daily activities, medication management, specialized care, or companionship, we are here to provide the support and care you deserve.
+<p>We understand that each individual's journey is unique, and we take pride in delivering personalized care with a warm and empathetic approach. Moriah Caregivers is more than just a care provider; we are your partners in promoting health, happiness, and a higher quality of life.</p>
+
+<p>With a commitment to excellence and a genuine passion for caregiving, Moriah Caregivers is your trusted partner in achieving the highest standards of care and well-being. Your comfort and peace of mind are our top priorities.</p>
+</p>
                                 
-                                <ul>
+                                {{-- <ul>
                                         <li>
                                             <div class="icon"><i class="fas fa-chevron-right"></i></div> 
                                             <div class="text">Pellentesque placerat, nisi congue vehicula efficitur.
@@ -60,10 +66,10 @@
                                             </div>
                                         </li>
                                     <div></div>
-                                </ul>
+                                </ul> --}}
                                
                                <div class="slider-btn mt-30">                                          
-                                            <a href="#" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Read More <i class="fas fa-chevron-right"></i></a>					
+                                            <a href="{{url('contact')}}" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Contact Us <i class="fas fa-chevron-right"></i></a>					
                                         </div>
                             </div>
                         </div>
@@ -123,7 +129,7 @@
             <!-- newslater-aread-end -->
             
             <!-- testimonial-area -->
-            <section id="testimonios" class="testimonial-area testimonial-p pt-50 pb-85 fix" style="background-image: {{asset('assets/img/an-bg/an-bg07.png')}};background-position: center; background-repeat: no-repeat;background-size: contain;" >
+            {{-- <section id="testimonios" class="testimonial-area testimonial-p pt-50 pb-85 fix" style="background-image: {{asset('assets/img/an-bg/an-bg07.png')}};background-position: center; background-repeat: no-repeat;background-size: contain;" >
                 <div class="container">
                       <div class="row justify-content-center">
                         
@@ -217,10 +223,10 @@
                         
                     </div>
                 </div>
-            </section>
+            </section> --}}
             <!-- testimonial-area-end -->
              <!-- brand-area -->
-            <div class="brand-area" style="background-image:{{asset('assets/img/an-bg/an-bg12.png')}}; background-size: cover;background-repeat: no-repeat;">
+            {{-- <div class="brand-area" style="background-image:{{asset('assets/img/an-bg/an-bg12.png')}}; background-size: cover;background-repeat: no-repeat;">
                 <div class="container">
                     <div class="row brand-active">
                         <div class="col-xl-2">
@@ -250,7 +256,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- brand-area-end -->
 			
         </main>
