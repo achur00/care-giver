@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\SubPage;
-use App\models\Page;
+use App\Models\Page;
 
 class ServiceController extends Controller
 {
