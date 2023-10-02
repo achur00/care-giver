@@ -19,7 +19,7 @@
                             </form>
                         </div>
                         <div class="col-xl-4 col-lg-4">
-                            <img src="{{asset('assets/img/bg/news-illustration.png')}}">
+                            <img src="{{asset('assets/img/bg/nurse.png')}}">
                         </div>
                     </div>
                    

@@ -84,7 +84,7 @@ a:hover,
 
 a,
 button {
-	color: #ffffff;
+	color: #0777ec;
 	outline: medium none;
 }
 
@@ -857,7 +857,7 @@ label {
 	display: inline-block;
 	padding-right: 15px;
 	padding-left: 15px;
-	color: #4A5764;
+	color: red;
 	content: ">";
 }
 
@@ -875,7 +875,7 @@ label {
 }
 
 .breadcrumb>.active {
-	color: #1E0B9B;
+	color: #0777ec;
 	font-weight: 500;
 }
 
@@ -1165,7 +1165,7 @@ label {
 }
 
 .btn.ss-btn:hover {
-	background: transparent linear-gradient(90deg, #07CCEC 0%, #1E0B9B 100%) 0% 0% no-repeat padding-box;
+	background: transparent linear-gradient(90deg, #ff5a00 0%) 0% 0% no-repeat padding-box;
 	;
 	color: #fff;
 }

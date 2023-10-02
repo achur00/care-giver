@@ -82,13 +82,13 @@
                             <div class="col-lg-6 col-md-8 d-none  d-md-block">
                                 <div class="header-cta">
                                     <ul>                                   
-                                        <li>
+                                        <li id="arkuz">
                                             <i class="icon dripicons-mail"></i>
-                                            <span><a class="arkuz-display-5" href='mailto:info@moriahcare.com'>{{$contact->email1}}</a></span>
+                                            <span><a class="arkuz-display-5" href='mailto:info@moriahcare.com' style="color:white;">{{$contact->email1}}</a></span>
                                         </li>
-                                        <li>
+                                        <li id="arkuz">
                                             <i class="icon dripicons-phone"></i>
-                                            <span><a class="arkuz-display-5" href='tel:info@moriahcare.com'>{{$contact->phone1}}</a></span>
+                                            <span><a class="arkuz-display-5" href='tel:info@moriahcare.com' style="color:white;">{{$contact->phone1}}</a></span>
                                         </li>
                                     </ul>
                                 </div>
@@ -186,20 +186,20 @@
                                 <div class="footer-link">
                                     <div class="f-contact">
                                     <ul>
-                                      @foreach ($contacts as $contact)
+                                      {{-- @foreach ($contacts as $contact) --}}
                                        <li>   
                                         <i class="icon dripicons-phone"></i>
-                                        <span ><a id="arkuz" id="arkuz" href='tel:"{{$contact->phone1}}"'>{{$contact->phone1}}</a><br><a  id="arkuz" href='tel:"{{$contact->phone1}}"'>{{$contact->phone2}}</a></span>
+                                        <span ><a id="arkuz"  href='tel:"{{$contact1->phone1}}"'>{{$contact1->phone1}}</a><br><a  id="arkuz" href='tel:"{{$contact1->phone1}}"'>{{$contact1->phone2}}</a></span>
                                     </li>
                                     <li>
-                                        <i class="icon dripicons-mail"></i>
-                                         <span><a id="arkuz" href="mailto:info@example.com">{{$contact->email1}}</a><br><a id="arkuz" href="mailto:sale@example.com">{{$contact->email2}}</a></span>
+                                        <i class="icon dripicons-phone"></i>
+                                         <span><a id="arkuz" href="mailto:info@example.com">{{$contact1->email1}}</a><br><a id="arkuz" href="mailto:sale@example.com">{{$contact1->email2}}</a></span>
                                     </li>
                                     <li>
                                       <i class="fal fa-map-marker-alt"></i>
-                                         <span>{{$contact->address}}</span>
+                                         <span>{{$contact1->address}}</span>
                                     </li>
-                                     @endforeach  
+                                     {{-- @endforeach   --}}
                                    
                                 </ul>
                                     

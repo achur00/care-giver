@@ -26,7 +26,7 @@ Route::get('/', [HomeController::class, 'index']  );
 // ServiceController
 Route::get('/services', [ServiceController::class, 'index']  );
 Route::get('/homecare/{homecare}', [ServiceController::class, 'homeCare']  );
-Route::get('/specialistcare/{homecare}', [ServiceController::class, 'specialistCare']  );
+Route::get('/specialistcare/{specialistcare}', [ServiceController::class, 'specialistCare']  );
 Route::get('/service/{service}', [ServiceController::class, 'show']  );
 
 // newsletter

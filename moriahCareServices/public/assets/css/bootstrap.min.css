@@ -7420,6 +7420,19 @@ button.bg-warning:hover {
     background-color: #ff5a00 !important
 }
 
+.arkuz-orange {
+    color: #ff5a00 !important
+}
+
+.bg-arkuz-opaque {
+    background-color: rgba(255, 255, 255, 0.5) !important
+}
+
+.bg-arkuz-opaque:hover {
+    background-color: #ff5a00 !important
+}
+
+
 /*++++++++++arkus+++++++++++++++++  */
 a.bg-danger:focus,
 a.bg-danger:hover,
@@ -7459,9 +7472,16 @@ button.bg-dark:hover {
 }
 
 .border {
-    border: 1px solid #dee2e6 !important
+    border: 1px solid #409eff !important
 }
 
+/* +++++++++++arkuz+++++++++++++++++ */
+.border:hover {
+    background-color: #ff5a00 !important;
+    border: 1px solid #ff5a00 !important
+}
+
+/* +++++++++++end arkuz+++++++++++++++++ */
 .border-top {
     border-top: 1px solid #dee2e6 !important
 }

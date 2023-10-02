@@ -5,18 +5,18 @@
         <main>
          
             <!-- breadcrumb-area -->
-            <section class="breadcrumb-area d-flex align-items-center" style="background-image:(assets/img/testimonial/test-bg.jpg);">
+            <section class="breadcrumb-area d-flex align-items-center" style="background-image:url({{asset('assets/img/bg/contact-us.jpg')}})">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                             <div class="breadcrumb-wrap text-center">
                                 <div class="breadcrumb-title mb-30">
-                                    <h2>Contact Us</h2>                                    
+                                    <h2 class="arkuz-orange">Contact Us</h2>                                    
                                 </div>
                                 <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">News</li>
+                                    <ol class="breadcrumb bg-warning rounded-pill p-1">
+                                        <li class="breadcrumb-item "><a href="{{url($homePage->url)}}">{{$homePage->name}}</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">{{$contactPage->name}}</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -26,7 +26,7 @@
             </section>
             <!-- breadcrumb-area-end -->
 			  <!-- contact-area -->
-            <section id="contact" class="contact-area contact-bg pt-100 pb-70 p-relative fix" style="background-image:url(assets/img/an-bg/an-bg11.png); background-size: cover;background-repeat: no-repeat;">
+            <section id="contact" class="contact-area contact-bg pt-100 pb-70 p-relative fix" style="background-image:url('assets/img/an-bg/an-bg11.png'); background-size: cover;background-repeat: no-repeat;">
                 <div class="container">
                     @if(Session::get('msgSuccess'))
                         <div class="alert alert-success"> {{ Session::get('msgSuccess')}}</div>

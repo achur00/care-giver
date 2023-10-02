@@ -26,12 +26,14 @@ class AppServiceProvider extends ServiceProvider
         {
              $page=Page::all()->load(['SubPage']);
              $contact=Contact::all();
+             $contact1=Contact::get()->first();
              $services=Service::inRandomOrder()->take(6)->get();
             
                  
 
         $view->with('pages', $page)
             ->with('contacts',$contact)
+            ->with('contact1',$contact1)
             ->with('allServices',$services)
         ;
         });

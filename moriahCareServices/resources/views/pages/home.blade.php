@@ -28,11 +28,11 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="slider-content s-slider-content text-left">
-                                        <h2 data-animation="fadeInUp" data-delay=".4s">
+                                        <h2 class="arkuz-orange" data-animation="fadeInUp" data-delay=".4s">
                                             {{-- Get Better Care For Your <span>Health</span> --}}
                                         {{$homeContent->title}}
                                         </h2>
-                                        <p data-animation="fadeInUp" data-delay=".6s"> {{$homeContent->content}}</p>
+                                        <p class="bg-white pl-2" data-animation="fadeInUp" data-delay=".6s"> {{$homeContent->content}}</p>
                                         <div class="slider-btn mt-25">                                          
                                         <a href=" {{$homeContent->cta_url}}" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s"> {{$homeContent->cta}} <i class="fas fa-chevron-right"></i></a>					
                                         </div>
@@ -55,60 +55,6 @@
                     
                
             </section>
-            <!-- slider-area-end -->
-			
-            
-			<!-- about-area -->
-            {{-- <section id="about" class="about-area about-p mt-100 pb-80 p-relative" style="background-image:url(img/an-bg/an-bg03.png); background-size: contain; background-repeat: no-repeat;background-position: center center;">
-                <div class="container">
-                    <div class="row align-items-center">					
-                      <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="s-about-img p-relative">
-                                <img src="{{asset('assets/img/bg/illlustration.png')}}" alt="img">
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="about-content s-about-content pl-30">
-                                <div class="section-title mb-20">
-                                    <span>About Us</span>
-                                    <h2>We Are Specialize in Medical Diagnositics</h2>                                  
-                                </div>
-                                <p>Nulla lacinia sapien a diam ullamcorper, sed congue leo vulputate. Phasellus et ante ultrices, sagittis purus vitae, sagittis quam. Quisque urna lectus, auctor quis tristique tincidunt, semper vel lectus. Mauris eget eleifend massa. Praesent ex felis, laoreet nec tellus in, laoreet commodo ipsum.</p>
-                                
-                                <ul>
-                                        <li>
-                                            <div class="icon"><i class="fas fa-chevron-right"></i></div> 
-                                            <div class="text">Pellentesque placerat, nisi congue vehicula efficitur.
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="icon"><i class="fas fa-chevron-right"></i></div> 
-                                            <div class="text">Pellentesque placerat, nisi congue vehicula efficitur.
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="icon"><i class="fas fa-chevron-right"></i></div> 
-                                            <div class="text">Phasellus mattis vitae magna in suscipit. Nam tristique posuere sem, mattis molestie est bibendum.
-                                            </div>
-                                        </li>
-                                    <div></div>
-                                </ul>
-                               
-                               <div class="slider-btn mt-30">                                          
-                                            <a href="#" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Read More <i class="fas fa-chevron-right"></i></a>					
-                                        </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section> --}}
-            <!-- about-area-end -->
-
-                         <!-- faq-area -->
-            {{-- <section class="faq-area pt-50 pb-50 fix" style="background-image: url(img/shape/header-sape6.png); background-position: right center; background-size: auto;background-repeat: no-repeat;">
-                <div class="container"> --}}
                 <div class="contain">
                     <div class="row  mx-auto container mt-5">                        
                       
@@ -152,14 +98,14 @@
 
                                                 <div class="card-body container">
                                                     <a class="rounded-pill bg-primary p-2 text-white" href='{{url("/service/$service->id")}}'>Go to Service</a>
-                                                </div>
+                                                </div> 
                                             </div>
                                         </div>
                                     @endforeach
 
-                                    <button class="w-100 p-3 bg-arkuz-moriah-orange rounded-pill justify-content-center" type="button" >
+                                    <button class="w-100 p-3 bg-arkuz-opaque rounded-pill justify-content-center" type="button" >
                                         <span class="text-light" >
-                                            <a href=href='{{url("/services")}}'>
+                                            <a href='{{url("/services")}}'>
                                             More Services
                                         </a>
                                         </span>
@@ -242,7 +188,7 @@
                                                 <div id="{{$service->card_id2}}" class="collapse" aria-labelledby="{{$service->card_id}}"
                                                     data-parent="#accordionExample">
                                                     <div class="card-body">
-                                                        {{$service->content}}
+                                                        {!!  Str::limit($service->content, 100) !!}
                                                     </div>
 
                                                     <div class="card-body container">
@@ -252,9 +198,9 @@
                                             </div>
                                         @endforeach
 
-                                        <button class="w-100 p-3 bg-arkuz-moriah-orange rounded-pill justify-content-center" type="button" >
+                                        <button class="w-100 p-3 bg-arkuz-opaque rounded-pill justify-content-center" type="button" >
                                         <span class="text-light" >
-                                            <a href=href='{{url("/services")}}'>
+                                            <a href='{{url("/services")}}'>
                                             More Services
                                         </a>
                                         </span>
@@ -300,7 +246,7 @@
 
                          <div class="col-lg-6 mt-70">                            
                              <div class="custom-achur-img">
-                                <img src="{{asset('assets/img/bg/loving-caring-young-adult-son-bringing-his-old-eld-2022-08-03-02-43-18-utc.jpg')}}" alt="touch-illustration">
+                                <img src="{{asset('assets/img/bg/nurse-specialist-talking-to-old-patient-about-dise-2022-10-11-19-17-59-utc.jpg')}}" alt="touch-illustration">
                             </div>
                         </div>
                     </div>
@@ -746,7 +692,7 @@
                     <div class="row align-items-center">
                          <div class="col-lg-5 col-md-12 col-sm-12">
                             <div class="single-counter-img fadeInUp animated" >
-								 <img src="{{asset('assets/img/bg/ap-illustration.png')}}" alt="img" class="img">
+								 <img src="{{asset('assets/img/bg/portrait-of-female-nurse-or-doctor-wearing-scrubs-2022-10-19-23-53-07-utc.png')}}" alt="img" class="img">
                             </div>
                         </div>
                       <div class="col-lg-5 col-md-12 col-sm-12">                                                     
@@ -755,6 +701,7 @@
                 </div>
             </div>
             <!-- counter-area-end -->
+
            
             <!-- blog-area -->
             {{-- <section id="blog" class="blog-area  p-relative pt-100 pb-90 fix" style="background-image:url(img/an-bg/an-bg10.png); background-size: contain;background-repeat: no-repeat;background-position: center center;">

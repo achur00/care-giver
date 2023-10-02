@@ -5,13 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\SubPage;
+use App\models\Page;
 
 class ServiceController extends Controller
 {
     // for all services
     public function index()
-    {   $serviceAndSubPages=SubPage::with(['Service'])->get();
-        return view('pages.services',compact('serviceAndSubPages'));
+    {   
+        $serviceAndSubPages=SubPage::with(['Service'])->get();
+        $homePage=Page::where('name','=','Home')->first();
+        $servicePage=Page::where('name','=','Services')->first();
+        return view('pages.services',compact('serviceAndSubPages','homePage','servicePage'));
     }
 
 
@@ -21,16 +25,21 @@ class ServiceController extends Controller
         // $serviceProduct=Service::where('id','=',$id)->first();
         if($id=1){
         $serviceAndSubPages=SubPage::with(['Service'])->where('id','=',$id)->get();
+         $homePage=Page::where('name','=','Home')->first();
+        $servicePage=Page::where('name','=','Services')->first();
+        
 
 
         // dd( $serviceAndSubPages);
 
-         return view('pages.services',compact('serviceAndSubPages'));
+         return view('pages.services',compact('serviceAndSubPages','homePage','servicePage'));
         }else{
             // reseting id to 1 even if it was changed in url
             $id=1;
             $serviceAndSubPages=SubPage::with(['Service'])->where('id','=',$id)->get();
-            return view('pages.services',compact('serviceAndSubPages'));
+            $homePage=Page::where('name','=','Home')->first();
+        $servicePage=Page::where('name','=','Services')->first();
+            return view('pages.services',compact('serviceAndSubPages','homePage','$servicePage' ));
         }
     }
 
@@ -38,16 +47,20 @@ class ServiceController extends Controller
         // $serviceProduct=Service::where('id','=',$id)->first();
         if($id=2){
         $serviceAndSubPages=SubPage::with(['Service'])->where('id','=',$id)->get();
+        $homePage=Page::where('name','=','Home')->first();
+        $servicePage=Page::where('name','=','Services')->first();
 
 
         // dd( $serviceAndSubPages);
 
-         return view('pages.services',compact('serviceAndSubPages'));
+         return view('pages.services',compact('serviceAndSubPages','homePage','servicePage'));
         }else{
             // reseting id to 2 even if it was changed in url
             $id=2;
             $serviceAndSubPages=SubPage::with(['Service'])->where('id','=',$id)->get();
-            return view('pages.services',compact('serviceAndSubPages'));
+            $homePage=Page::where('name','=','Home')->first();
+            $servicePage=Page::where('name','=','Services')->first();
+            return view('pages.services',compact('serviceAndSubPages','homePage','servicePage'));
         }
     }
 

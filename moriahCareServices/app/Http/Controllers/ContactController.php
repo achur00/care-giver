@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 use App\Models\Message;
+use App\Models\Page;
 
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
     public function index(){
-        return view('pages.contact');
+        $homePage=Page::where('name','=','Home')->first();
+        $contactPage=Page::where('name','=','Contact')->first();
+        return view('pages.contact',compact('homePage','contactPage'));
     }
 
     public function store(Request $request){
